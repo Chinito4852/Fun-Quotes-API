@@ -36,7 +36,7 @@ app.get('/taylor', function(req, res) {
       res.sendStatus(500);
     }
     else {
-      res.send(body);
+      res.send(new Quote(body.quote, "Taylor Swift"));
     }
   });
 });
@@ -48,8 +48,7 @@ app.get('/ron', function(req, res) {
       res.sendStatus(500);
     }
     else {
-      console.log(body[0]);
-      res.send(body);
+      res.send(new Quote(body[0], "Ron Swanson"));
     }
   });
 });
@@ -61,7 +60,7 @@ app.get('/inspirational', function(req, res) {
       res.sendStatus(500);
     }
     else {
-      res.send(body);
+      res.send(new Quote(body.quoteText, body.quoteAuthor));
     }
   });
 });
