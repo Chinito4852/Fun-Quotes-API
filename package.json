@@ -1,0 +1,20 @@
+{
+  "engines": {
+    "node": "14.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "name": "fun-quotes-api",
+  "version": "1.0.0",
+  "description": "A REST API for fetching inspirational, Kanye West, Taylor Swift, or Ron Swanson quotes.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tristin Wong",
+  "license": "ISC"
+}
