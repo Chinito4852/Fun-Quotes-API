@@ -83,7 +83,7 @@ app.get('/random', cors(), function(req, res) {
       if (source === 0) res.send(new Quote(body.quote, "Kanye West"));
       else if (source === 1) res.send(new Quote(body.quote, "Taylor Swift"));
       else if (source === 2) res.send(new Quote(body[0], "Ron Swanson"));
-      else res.send(new Quote(body.quoteText, body.quoteAuthor));
+      else res.send(new Quote(body.quoteText.trim(), body.quoteAuthor.trim()));
     }
   });
 });
