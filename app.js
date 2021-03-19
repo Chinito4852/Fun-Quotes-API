@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
+const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -17,7 +18,7 @@ const Quote = function(quote, author) {
   this.author = author;
 }
 
-app.get('/kanye', function(req, res) {
+app.get('/kanye', cors(), function(req, res) {
   request("https://api.kanye.rest/", {json: true}, function(err, result, body) {
     if (err) {
       console.log(err);
