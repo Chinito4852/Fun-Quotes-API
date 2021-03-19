@@ -30,7 +30,7 @@ app.get('/kanye', cors(), function(req, res) {
   });
 });
 
-app.get('/taylor', function(req, res) {
+app.get('/taylor', cors(), function(req, res) {
   request("https://api.taylor.rest/", {json: true}, function(err, result, body) {
     if (err) {
       console.log(err);
@@ -42,7 +42,7 @@ app.get('/taylor', function(req, res) {
   });
 });
 
-app.get('/ron', function(req, res) {
+app.get('/ron', cors(), function(req, res) {
   request("http://ron-swanson-quotes.herokuapp.com/v2/quotes", {json: true}, function(err, result, body) {
     if (err) {
       console.log(err);
@@ -54,7 +54,7 @@ app.get('/ron', function(req, res) {
   });
 });
 
-app.get('/inspirational', function(req, res) {
+app.get('/inspirational', cors(), function(req, res) {
   request("http://api.forismatic.com/api/1.0/?lang=en&method=getQuote&format=json", {json: true}, function(err, result, body) {
     if (err) {
       console.log(err);
@@ -66,7 +66,7 @@ app.get('/inspirational', function(req, res) {
   });
 });
 
-app.get('/random', function(req, res) {
+app.get('/random', cors(), function(req, res) {
   let url = "";
   const source = Math.floor(Math.random() * Math.floor(4));
   if (source === 0) url = "https://api.kanye.rest/";
