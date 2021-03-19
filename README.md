@@ -1,6 +1,6 @@
 # Fun quotes API
 A simple Node.js server because I wanted to put some of my favorite quotes from APIs I've played around with in a single place.
-Credits: Andrew Jazbec for Kanye.rest, gillescoolen for taylor.rest, jamesseanwright for the Ron Swanson quotes API, and Alty,Inc. for Forismatic.
+Credits: Andrew Jazbec for kanye.rest, gillescoolen for taylor.rest, jamesseanwright for the Ron Swanson quotes API, and Alty,Inc. for Forismatic.
 
 ## Routes
 

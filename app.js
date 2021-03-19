@@ -61,7 +61,7 @@ app.get('/inspirational', cors(), function(req, res) {
       res.sendStatus(500);
     }
     else {
-      res.send(new Quote(body.quoteText, body.quoteAuthor));
+      res.send(new Quote(body.quoteText.trim(), body.quoteAuthor.trim()));
     }
   });
 });
