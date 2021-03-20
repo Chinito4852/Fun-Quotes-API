@@ -5,7 +5,7 @@ Credits: Andrew Jazbec for kanye.rest, gillescoolen for taylor.rest, jamesseanwr
 ## Routes
 
 ### `GET /kanye`
-https://fun-quotes.herokuapp.com/kanye
+https://fun-quotes.herokuapp.com/kanye  
 Returns a javascript object with a Kanye West quote.
 ```json
 {
@@ -15,7 +15,7 @@ Returns a javascript object with a Kanye West quote.
 ```
 
 ### `GET /taylor`
-https://fun-quotes.herokuapp.com/taylor
+https://fun-quotes.herokuapp.com/taylor  
 Returns a javascript object with a Taylor Swift quote.
 ```json
 {
@@ -25,7 +25,7 @@ Returns a javascript object with a Taylor Swift quote.
 ```
 
 ### `GET /ron`
-https://fun-quotes.herokuapp.com/ron
+https://fun-quotes.herokuapp.com/ron  
 Returns a javascript object with a Ron Swanson quote.
 ```json
 {
@@ -35,7 +35,7 @@ Returns a javascript object with a Ron Swanson quote.
 ```
 
 ### `GET /inspirational`
-https://fun-quotes.herokuapp.com/inspirational
+https://fun-quotes.herokuapp.com/inspirational  
 Returns a javascript object with an inspirational quote and the author of that quote.
 ```json
 {
@@ -45,10 +45,10 @@ Returns a javascript object with an inspirational quote and the author of that q
 ```
 
 ### `GET /random`
-https://fun-quotes.herokuapp.com/random
+https://fun-quotes.herokuapp.com/random  
 Returns a javascript object with a random quote and the author of that quote. Random quotes have an
 equal chance of being a Kanye, Taylor, Ron, or inspirational quote.
 
 ### Local development
-After cloning this repo, run 'npm install' or 'npm i' to install the required dependencies.
-Then, run 'npm start' to run the server.
+After cloning this repo, run `npm install` or `npm i` to install the required dependencies.
+Then, run `npm start` to run the server.
